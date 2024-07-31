@@ -5,7 +5,7 @@ import { FaTicketAlt } from "react-icons/fa";
 import Link from 'next/link';
 import { HiOutlineExternalLink } from "react-icons/hi"
 
-const EventDetails = ({ data}) => {
+const EventDetails = ({ data}: any) => {
     const [timeLeft, setTimeLeft] = useState({
         days: 0,
         hours: 0,

@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-const CoverImage = ({data}) => {
+const CoverImage = ({ data }: any) => {
   return (
     //   <div className='' >
           <Image

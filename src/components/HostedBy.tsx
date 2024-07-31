@@ -8,7 +8,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa6";
 import Link from 'next/link';
 
-const HostedBy = ({data}) => {
+const HostedBy = ({ data }: any) => {
   return (
       <>
           <div>
