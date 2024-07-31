@@ -8,6 +8,7 @@ import EventDetails from '@/components/EventDetails';
 import HostedBy from '@/components/HostedBy';
 import Image from 'next/image';
 import { FaRegUser } from "react-icons/fa6";
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   const [data, setData] = useState(null);
@@ -23,12 +24,7 @@ export default function Home() {
     <>
       <div>
         {/* Navbar */}
-        <div className="flex flex-row justify-between items-center px-8 pt-7">
-          {data?.navbar_icon && (
-            <Image src={data?.navbar_icon} alt='' height={100} width={100} />
-          )}
-         <FaRegUser/>
-        </div>
+       <Navbar data={data}/>
         {/* middle */}
         <div className="grid grid-cols-5 pt-8 px-6">
           {/* left side */}
