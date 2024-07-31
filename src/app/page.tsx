@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { FaRegUser } from "react-icons/fa6";
 
 export default function Home() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<[]>([]); // Replace 'YourDataType' with the actual type of 'data'
 
   useEffect(() => {
     fetch('https://dev-api.konfhub.com/event/public/konfhub-frontend-evaluation-task')
@@ -24,7 +24,7 @@ export default function Home() {
       <div>
         {/* Navbar */}
         <div className="flex flex-row justify-between items-center px-8 pt-7">
-          {data && <Image src={data.navbar_icon} alt='' height={100} width={100} />}
+          {data && <Image src={data?.navbar_icon} alt='' height={100} width={100} />}
          <FaRegUser/>
         </div>
         {/* middle */}
