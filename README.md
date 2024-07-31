@@ -69,3 +69,8 @@ After installing the dependencies, you can start the development server.
 2. **Open your browser:**
 
     Navigate to `http://localhost:3000` to see the application running.
+
+## Technology Used
+
+1. NextJs
+2. TailwindCSS
