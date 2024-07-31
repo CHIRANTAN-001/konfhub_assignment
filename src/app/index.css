@@ -1,0 +1,24 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.custom-table{
+    line-height: 1.7;
+    text-align: center;
+}
+
+.custom-table th{
+    border: 1px solid black;
+}
+
+.custom-table td{
+    border: 1px solid black;
+}
+
+.custom-table th, .custom-table td{
+    padding-top: 10px;
+    width: 350px;
+}
+
+
+
